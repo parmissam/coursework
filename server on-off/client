@@ -3,10 +3,8 @@ import tkinter as tk
 from tkinter import messagebox, simpledialog
 import os
 
-# ---------------- تنظیمات ----------------
 HOST = '192.168.1.158'
 PORT = 12345
-# -----------------------------------------
 
 def get_mac_address():
     filename = "mac_address.txt"
@@ -86,7 +84,6 @@ def exit_program():
         pass
     root.destroy()
 
-# ------------------ رابط کاربری ------------------
 
 root = tk.Tk()
 root.title("Remote Server Controller")
@@ -112,7 +109,6 @@ button_exit.pack(pady=5)
 text_log = tk.Text(root, height=8, state='disabled')
 text_log.pack(fill='both', expand=True, padx=10, pady=10)
 
-# ⬅️ دریافت آدرس MAC در ابتدای برنامه
 SERVER_MAC_ADDRESS = get_mac_address()
 
 root.mainloop()
