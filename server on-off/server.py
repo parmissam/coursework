@@ -21,7 +21,7 @@ def log_to_gui(msg):
 
 def server_loop():
     global running
-    log_to_gui("🚀 سرور در حال اجراست و منتظر اتصال...")
+    log_to_gui(" سرور در حال اجراست و منتظر اتصال...")
     while running:
         try:
             server_socket.settimeout(1.0)
